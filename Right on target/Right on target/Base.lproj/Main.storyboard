@@ -40,6 +40,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сгенерированное число: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOS-eQ-53D">
+                                <rect key="frame" x="345" y="131" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -49,12 +55,15 @@
                             <constraint firstItem="qyS-ha-R2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JDG-Ze-79S"/>
                             <constraint firstItem="SUN-hh-xP6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyO-ic-zI6"/>
                             <constraint firstItem="qyS-ha-R2I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eaC-99-vP6"/>
+                            <constraint firstItem="BOS-eQ-53D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbj-qc-DYx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qyS-ha-R2I" secondAttribute="trailing" constant="20" id="hnR-gO-u2r"/>
+                            <constraint firstItem="qyS-ha-R2I" firstAttribute="top" secondItem="BOS-eQ-53D" secondAttribute="bottom" constant="40" id="rol-Jz-8lc"/>
                             <constraint firstItem="5iG-lu-beB" firstAttribute="top" secondItem="qyS-ha-R2I" secondAttribute="bottom" constant="30" id="vXt-Y8-x1k"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="SUN-hh-xP6" id="WUm-v5-TwD"/>
+                        <outlet property="label_generated" destination="BOS-eQ-53D" id="oiB-kO-LOV"/>
                         <outlet property="slider" destination="qyS-ha-R2I" id="4q3-Zk-Lp8"/>
                     </connections>
                 </viewController>
