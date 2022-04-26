@@ -73,13 +73,22 @@ class ViewController: UIViewController {
         self.label_generated.text = String(number)
         self.label_generated.text = String("Сгенерированное число \(number)")
     }
-    @IBAction func showNextScreen(){
-        //загрузка storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //загрузка вью контроллера и его сцены со сторибоарды
+    //ленивое свойство для хранения View Controller
+    lazy var secondViewController: SecondViewController = getSecondViewController()
+    
+    //приватный метод загрудащий вью контроллер
+    private func getSecondViewController()->SecondViewController{
+        let storyboard = UIStoryboard(name: "Main", bundle:nil)
         let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
-        //отображение сцены на экране
-        self.present(viewController, animated: true, completion: nil)
+        return viewController as! SecondViewController
+    }
+    @IBAction func showNextScreen(){
+//        //загрузка storyboard
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        //загрузка вью контроллера и его сцены со сторибоарды
+//        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+//        //отображение сцены на экране
+        self.present(secondViewController, animated: true, completion: nil)
     }
 }
 
