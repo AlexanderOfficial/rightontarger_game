@@ -10,6 +10,33 @@ class ViewController: UIViewController {
         self.label_generated.text = String("Сгенерированное число \(number)")
         // Do any additional setup after loading the view.
     }
+    override func loadView() {
+        super.loadView()
+        print("LoadView")
+        
+        //создаем метку для вывода номера версии
+       // let versionLabel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height:20))
+        //изменяет текст метки
+       // versionLabel.text = String("Версия 1.1")
+        //добавляем метку в родителський view
+        //self.view.addSubview(versionLabel)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    
     @IBOutlet var slider: UISlider!
     @IBOutlet var label: UILabel!
     @IBOutlet var label_generated: UILabel!
@@ -46,6 +73,13 @@ class ViewController: UIViewController {
         self.label_generated.text = String(number)
         self.label_generated.text = String("Сгенерированное число \(number)")
     }
-    
+    @IBAction func showNextScreen(){
+        //загрузка storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //загрузка вью контроллера и его сцены со сторибоарды
+        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+        //отображение сцены на экране
+        self.present(viewController, animated: true, completion: nil)
+    }
 }
 
