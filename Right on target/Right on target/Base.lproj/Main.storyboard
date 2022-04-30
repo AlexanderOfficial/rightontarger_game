@@ -9,36 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second View Controller-->
-        <scene sceneID="l77-A0-AZB">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="PJH-hC-0Op" customClass="SecondViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mQe-ff-CVQ">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6l-cl-lG1">
-                                <rect key="frame" x="415" y="191.5" width="66" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Назад"/>
-                                <connections>
-                                    <action selector="hideCurrentScene" destination="PJH-hC-0Op" eventType="touchDown" id="LPh-Zh-iXl"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="apQ-Yl-LFO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="P6l-cl-lG1" firstAttribute="centerY" secondItem="mQe-ff-CVQ" secondAttribute="centerY" id="dF6-q8-4vc"/>
-                            <constraint firstItem="P6l-cl-lG1" firstAttribute="centerX" secondItem="mQe-ff-CVQ" secondAttribute="centerX" id="dkq-8o-UEy"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="A9Z-Vv-4hQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k6e-Ut-1HQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="19" y="1026"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -76,14 +46,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf0-fY-gYt">
-                                <rect key="frame" x="761" y="362" width="115" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="О программе"/>
-                                <connections>
-                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchDown" id="0pq-Np-O66"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -91,8 +53,6 @@
                             <constraint firstItem="SUN-hh-xP6" firstAttribute="top" secondItem="5iG-lu-beB" secondAttribute="bottom" constant="30" id="2y7-5o-qhj"/>
                             <constraint firstItem="5iG-lu-beB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EEm-ZN-zld"/>
                             <constraint firstItem="qyS-ha-R2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JDG-Ze-79S"/>
-                            <constraint firstItem="Mf0-fY-gYt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qc9-UL-BL7"/>
-                            <constraint firstAttribute="trailing" secondItem="Mf0-fY-gYt" secondAttribute="trailing" constant="20" id="Sic-Vp-FCq"/>
                             <constraint firstItem="SUN-hh-xP6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyO-ic-zI6"/>
                             <constraint firstItem="qyS-ha-R2I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eaC-99-vP6"/>
                             <constraint firstItem="BOS-eQ-53D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbj-qc-DYx"/>
@@ -110,15 +70,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19.419642857142858" y="84.057971014492765"/>
+            <point key="canvasLocation" x="762.72321428571422" y="84.057971014492765"/>
         </scene>
     </scenes>
     <resources>
         <image name="01.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
