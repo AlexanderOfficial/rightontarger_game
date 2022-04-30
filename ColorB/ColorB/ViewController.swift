@@ -72,10 +72,12 @@ class ViewController: UIViewController {
         v2.backgroundColor = UIColor(red: 0.5, green: 1, blue: 0, alpha: 1)
         self.view.addSubview(v1)
         v1.addSubview(v2)
-        v2.bounds.size.height += 20
-        v2.bounds.size.width += 20
-        
+//        v2.bounds.size.height += 20
+//        v2.bounds.size.width += 20
+//        v1.bounds.origin.x += 10
+//        v1.bounds.origin.y += 10
 
-        }
+        
+    }
 }
 

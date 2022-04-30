@@ -10,18 +10,18 @@ class ViewController: UIViewController {
         print("VD")
         newGame = Game(startValue: 1, endValue: 50, rounds: 5)
         // Обновляем данные о текущем значении загаданного числа
-        updateLabelWithSecretNumber(newText: String(game.currentSecretValue))
+       // updateLabelWithSecretNumber(newText: String(game.currentSecretValue))
     }
     
     
     
     
-    var number: Int = 0
-    var round: Int = 1
-    var points: Int = 0
-    @IBAction func checkNumber(){
-        game.calculate
-    }
+//    var number: Int = 0
+//    var round: Int = 1
+//    var points: Int = 0
+//    @IBAction func checkNumber(){
+//        game.calculate
+//    }
     
 }
 
